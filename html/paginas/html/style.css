@@ -1,0 +1,136 @@
+@keyframes neon{
+
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to{
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+
+body{
+    background-color: rgb(49, 49, 56);
+}
+.fundo{
+    background-color: #2b2c2b;
+    height: 670px;
+    width: auto;
+    border: solid;
+    margin-top: 20px;
+    word-wrap: break-word;
+    
+    animation: neon 0s alternate ease-in-out;
+    --cor-neon: $ffbe0b;
+    
+}
+.info{
+    display: block;
+    margin-top: 50px;
+    margin-left: 36%;
+
+    height: 50px;
+    
+    text-decoration: dotted;
+
+    border:solid #06ff06;
+
+    font-size: 15px;
+
+    color: white;
+    background-color: #456945;
+    word-wrap: break-word;
+}
+
+button{
+    border-radius: 15px;
+    animation: neon 0s alternate ease-in-out;
+    --cor-neon: $ffbe0b;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,0,0,0.1));
+}
+@keyframes anim{
+    0%{
+        background-color: #456945;
+    }50%{
+        background-color: #07c207;
+
+    }100%{
+        background-color: #456945;
+
+    }
+}
+
+button:hover{
+    border-radius: 15px;
+   animation: anim 3s infinite;
+   cursor: pointer;
+}
+button:not(:hover){
+    transition: 0.5s;
+    
+}
+.text {
+    color: #2b2c2b;
+    position: relative;
+    display:contents;
+    top: 30px;
+}
+#escondido{
+    background-color: none;
+    margin-left: 580px;
+    border-radius: 30px;
+    margin-top: -540px;
+
+    color: none;
+    font-size: 30px;
+    text-align:justify;
+
+    
+
+
+    height: 5;
+    width: 390px;
+    word-wrap: break-word;
+}
+
+#bh{
+    display: none;
+    height: 30px;
+   margin-left: 125px; 
+   margin-top: 15px;
+   border-radius: 50%;
+   
+}
+
+img{
+    width:inherit;
+    transform: rotate(315deg);
+    border-radius: 50%;
+}
+img:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.274);
+}
+.perfil{
+    border: solid  #10c4ac;
+    transform:rotate(44deg);
+    background-color: rgb(185, 231, 185);
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin-top: 20%;
+    margin-left: 35%;
+    left: 78px;
+    word-wrap: break-word;
+    border-radius: 50%;
+}
+.interno{
+    border:solid #06ff06;
+    background-color: #364736;
+    border-radius: 30px;
+    position: relative;
+    height: 300px;
+    left: 25%;
+    width: 300px;
+    margin: 200;
+    word-wrap: break-word;
+}
